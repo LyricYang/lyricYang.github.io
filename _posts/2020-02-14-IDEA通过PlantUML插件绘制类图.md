@@ -9,6 +9,15 @@ catalog: true
 tags:
     - 基础知识
 ---
+## UML基础介绍
+
+> UML（Unified Modeling Language）统一建模语言，是一种用于软件系统分析和设计的语言工具，他用于帮助软件开发人员进行思考和记录思路的结果。
+
+### UML图的分类
+
+1. 用例图
+2. 静态结构图：类图、对象图、包图、组件图、部署图
+3. 动态行为图：交互图、状态图、活动图
 
 ## 安装PlantUML插件及Graphviz软件
 
@@ -21,6 +30,18 @@ tags:
 ## 绘制类图
 
 ### 类之间的关系
+
+- 依赖关系
+  - 类中用到了对方
+  - 类的成员属性
+  - 方法的返回类型
+  - 方法的参数类型
+  - 方法中使用到
+- 泛化关系
+- 实现关系
+- 关联关系（类与类之间的关系）
+- 聚合关系（整体与部分，导航性，关联关系的特例，可分离）
+- 组合关系（整体与部分，不可分离，共生共灭）
 
 可以在符号中的`-`或者`.`间添加`up`、`down`、`left`、`right`来改变类关系连接线的方向
 
@@ -47,7 +68,6 @@ class11 *--  class12
 ```
 
 <div align="center"><img src="https://raw.githubusercontent.com/LyricYang/LyricYang.github.io/master/img/designpattern/20200214-1.png"/></div>
-
 ### 添加属性和方法
 
 **类型**
