@@ -54,7 +54,7 @@ class11 *--  class12
 
 | keyword        | Description |
 | -------------- | ----------- |
-|                | 包          |
+| package        | 包          |
 | abstract class | 抽象类      |
 | interface      | 接口        |
 | annotation     | 注解        |
