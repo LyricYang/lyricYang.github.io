@@ -110,5 +110,8 @@ friends: [
     },{
         title: "Tech Crunch",
         href: "https://techcrunch.com/"
+    },{
+        title: "稚晖的个人站",
+        href: "http://pengzhihui.xyz/"
     }
 ]
