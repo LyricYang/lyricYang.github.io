@@ -109,15 +109,15 @@ class11 *--  class12
 
 - 注释中的html标签
 
-| Symbol                                          | Description |
-| ----------------------------------------------- | ----------- |
-| <b>                                             | 粗体        |
-| <u>                                             | 下划线      |
-| <i>                                             | 斜体        |
-| <s>,<del>,<strike>                              | 删除        |
-| <font color="#AAAAAA">,<font color="colorName"> | 字体颜色    |
-| `<size:nn>`                                     | 字体大小    |
-| <img src="">                                    | 图片        |
+| Symbol                                              | Description |
+| --------------------------------------------------- | ----------- |
+| `<b>`                                               | 粗体        |
+| `<u>`                                               | 下划线      |
+| `<i>`                                               | 斜体        |
+| `<s>`,`<del>`,`<strike>`                            | 删除        |
+| `<font color="#AAAAAA">`,`<font color="colorName">` | 字体颜色    |
+| `<size:nn>`                                         | 字体大小    |
+| `<img src="">`                                      | 图片        |
 
 ```puml
 @startuml
@@ -169,4 +169,3 @@ package java.lang #DDDDDD{
 ```
 
 <div align="center"><img src="https://raw.githubusercontent.com/LyricYang/LyricYang.github.io/master/img/designpattern/20200214-2.png"/></div>
-
