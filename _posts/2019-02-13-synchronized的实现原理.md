@@ -39,7 +39,6 @@ public class SynchronizedTest {
 利用javap工具查看生成的class文件信息来分析Synchronize的实现，输入命令`javap -c SynchronizedTest.class`
 
 <div align="center"><img src="https://raw.githubusercontent.com/LyricYang/LyricYang.github.io/master/img/synchronized/2019021301.jpg"/></div>
-
 从上面可以看出，同步代码块是使用monitorenter和monitorexit指令实现的，同步方法（在这看不出来需要看JVM底层实现）依靠的是方法修饰符上的ACC_SYNCHRONIZED实现。
 
 **同步代码块：**monitorenter指令插入到同步代码块的开始位置，monitorexit指令插入到同步代码块的结束位置，JVM需要保证每一个monitorenter都有一个monitorexit与之相对应。任何对象都有一个monitor与之相关联，当且一个monitor被持有之后，他将处于锁定状态。线程执行到monitorenter指令时，将会尝试获取对象所对应的monitor所有权，即尝试获取对象的锁；
@@ -63,7 +62,6 @@ Mark Word用于存储对象自身的运行时数据，如**哈希码（HashCode�
 对象头信息是与对象自身定义的数据无关的额外存储成本，但是考虑到虚拟机的空间效率，Mark Word被设计成一个非固定的数据结构以便在极小的空间内存存储尽量多的数据，它会根据对象的状态复用自己的存储空间，也就是说，Mark Word会随着程序的运行发生变化，变化状态如下（32位虚拟机）： 
 
 <div align="center"><img src="https://raw.githubusercontent.com/LyricYang/LyricYang.github.io/master/img/synchronized/2019021302.jpg"/></div>
-
 ### Monitor
 
 什么是Monitor？我们可以把它理解为一个同步工具，也可以描述为一种同步机制，它通常被描述为一个对象。 
@@ -73,7 +71,6 @@ Mark Word用于存储对象自身的运行时数据，如**哈希码（HashCode�
 Monitor 是线程私有的数据结构，每一个线程都有一个可用monitor record列表，同时还有一个全局的可用列表。每一个被锁住的对象都会和一个monitor关联（对象头的MarkWord中的LockWord指向monitor的起始地址），同时monitor中有一个Owner字段存放拥有该锁的线程的唯一标识，表示该锁被这个线程占用。其结构如下：
 
 <div align="center"><img src="https://raw.githubusercontent.com/LyricYang/LyricYang.github.io/master/img/synchronized/2019021303.jpg"/></div>
-
 **Owner：**初始时为NULL表示当前没有任何线程拥有该monitor record，当线程成功拥有该锁后保存线程唯一标识，当锁被释放时又设置为NULL。 
 
 **EntryQ：**关联一个系统互斥锁（semaphore），阻塞所有试图锁住monitor record失败的线程。 
@@ -160,7 +157,6 @@ public void vectorTest(){
 下图是轻量级锁的获取和释放过程
 
 <div align="center"><img src="https://raw.githubusercontent.com/LyricYang/LyricYang.github.io/master/img/synchronized/2019021304.jpg"/></div>
-
 ### 偏向锁
 
 引入偏向锁主要目的是：为了在无多线程竞争的情况下尽量减少不必要的轻量级锁执行路径。上面提到了轻量级锁的加锁解锁操作是需要依赖多次CAS原子指令的。那么偏向锁是如何来减少不必要的CAS操作呢？我们可以查看Mark work的结构就明白了。只需要检查是否为偏向锁、锁标识为以及ThreadID即可，处理流程如下： 
