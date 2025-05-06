@@ -7,19 +7,20 @@ author:     AaronYang
 header-img: img/designpattern/post-bg-design.jpg
 catalog: true
 tags:
-    - 基础知识
+    - 编程工具
 ---
-## UML基础介绍
+
+## 01｜UML基础介绍
 
 > UML（Unified Modeling Language）统一建模语言，是一种用于软件系统分析和设计的语言工具，他用于帮助软件开发人员进行思考和记录思路的结果。
 
-### UML图的分类
+### 1.1 UML图的分类
 
 1. 用例图
 2. 静态结构图：类图、对象图、包图、组件图、部署图
 3. 动态行为图：交互图、状态图、活动图
 
-## 安装PlantUML插件及Graphviz软件
+## 02｜安装PlantUML插件及Graphviz软件
 
 - PlantUML插件
 - [图像可视化的软件Graphviz]( https://graphviz.gitlab.io/_pages/Download/Download_windows.html )
@@ -27,9 +28,9 @@ tags:
 1. 在IntelliJ IDEA中搜索并安装PlantUML，重启idea;
 2. 下载安装graphviz，并配置环境变量 `GRAPHVIZ_DOT=D:\Program Files\Graphviz2.38\bin\dot.exe`
 
-## 绘制类图
+## 03｜绘制类图
 
-### 类之间的关系
+### 3.1 类之间的关系
 
 - 依赖关系
   - 类中用到了对方
@@ -68,7 +69,8 @@ class11 *--  class12
 ```
 
 <div align="center"><img src="https://raw.githubusercontent.com/LyricYang/LyricYang.github.io/master/img/designpattern/20200214-1.png"/></div>
-### 添加属性和方法
+
+### 3.2 添加属性和方法
 
 **类型**
 
