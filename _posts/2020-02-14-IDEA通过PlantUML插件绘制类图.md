@@ -2,7 +2,7 @@
 layout:     post
 title:      IDEA通过PlantUML插件绘制类图
 subtitle:   
-date:       2020-02-14
+date:       2020-02-14 12:00:00
 author:     AaronYeoh
 header-img: img/designpattern/post-bg-design.jpg
 catalog: true

@@ -2,7 +2,7 @@
 layout:     post
 title:      synchronized的实现原理
 subtitle:   
-date:       2019-02-13
+date:       2019-02-13 12:00:00
 author:     YM(转载)
 header-img: img/synchronized/post-bg-hacker.jpg
 catalog: true
