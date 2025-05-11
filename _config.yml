@@ -5,7 +5,7 @@ header-img: img/background/post-bg-desk.jpg
 email: yanglin9837@gmail.com
 description: "Every failure is leading towards success."
 keyword: "YM, YM Blog, 易木的博客, 易木, 博客, Jekyll, GitHub Pages, 个人博客, 个人网站, 个人主页, @lyricyang, Yeoh, Yang, homepage, 互联网, 后端, 全栈"
-url: "http://lyricyang.github.io"          # your host, for absolute URL
+url: "https://blog.yeoh-yolo.com/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/LyricYang/LyricYang.github.io.git" # you code repository
 
