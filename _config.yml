@@ -13,7 +13,7 @@ github_repo: "https://github.com/LyricYang/LyricYang.github.io.git" # you code r
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 github_username:    Lyricyang
 linkedin_username:  lin-yang-733705341
 twitter_username:   AaronYeohXY
@@ -69,8 +69,14 @@ sidebar-about-description: "Get busy living, Or get busy dying!"
 sidebar-avatar: /img/icon/about-YM-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Google Analytics
-ga_track_id: ''            # Format: UA-xxxxxx-xx
-ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+# 作用：指定 Google Analytics 的跟踪 ID，用于唯一标识你的 GA 属性。
+# 格式：UA-xxxxxx-xx（Universal Analytics）或 G-XXXXXXXXXX（Google Analytics 4）。
+# 用途：通过这个 ID，Google Analytics 能够将访问数据归属到你的账户。
+ga_track_id: "G-4T13Q5BKW5"
+# 作用：设置跟踪的域名范围。
+# 默认值：auto，表示自动检测域名。
+# 用途：如果你有自定义域名（如 example.com），可以设置为该域名。如果使用 GitHub Pages 的默认域名（如 username.github.io），可以保持为 auto。
+ga_domain: blog.yeoh-yolo.com
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
