@@ -3,15 +3,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <!-- SNS Link -->
+                <!-- SNS:Social Networking Service Link -->
                 {% include sns-links.html center=true %}
 
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    Powered by <a href="https://lyricyang.github.io/">YM Blog</a> |
-                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
-                        height="20px"
+                    Powered by <a href="https://blog.yeoh-yolo.com/">YM Blog</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://img.shields.io/github/followers/lyricyang.svg?style=social&label=Follow%20Me">
                     </iframe>
                 </p>
@@ -76,7 +75,6 @@
 <script>
     async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
         $.fn.tagcloud.defaults = {
-            //size: {start: 1, end: 1, unit: 'em'},
             color: { start: '#bbbbee', end: '#2f93b4' },
         };
         $('#tag_cloud a').tagcloud();
@@ -93,7 +91,6 @@
     })
 </script>
 
-
 <!-- Google Analytics -->
 {% if site.ga_track_id %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T13Q5BKW5"></script>
@@ -104,25 +101,6 @@
     gtag('config', 'G-4T13Q5BKW5');
   </script>
 {% endif %}
-
-
-<!-- Baidu Tongji -->
-{% if site.ba_track_id %}
-<script>
-    // dynamic User by Hux
-    var _baId = '{{ site.ba_track_id }}';
-
-    // Originial
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?" + _baId;
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-{% endif %}
-
 
 <!-- Side Catalog -->
 {% unless page.no-catalog %}
@@ -201,7 +179,7 @@
     function setLang(newLang) {
         var params = new URLSearchParams(document.location.search)
         params.set("lang", newLang)
-        document.location.search = params.toString()  // refresh.
+        document.location.search = params.toString()
     }
 
     // handle render
@@ -214,7 +192,6 @@
             $en.classList.add("active");
             $zh.style.display = "none";
             $zh.classList.remove("active");
-            // default to zh-cn
         } else {
             $select.selectedIndex = 0;
             $zh.style.display = "block";

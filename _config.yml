@@ -5,9 +5,12 @@ header-img: img/background/post-bg-desk.jpg
 email: yanglin9837@gmail.com
 description: "Every failure is leading towards success."
 keyword: "YM, YM Blog, 易木的博客, 易木, 博客, Jekyll, GitHub Pages, 个人博客, 个人网站, 个人主页, @lyricyang, Yeoh, Yang, homepage, 互联网, 后端, 全栈"
-url: "https://blog.yeoh-yolo.com/"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/LyricYang/LyricYang.github.io.git" # you code repository
+# your host, for absolute URL
+url: "https://blog.yeoh-yolo.com/"
+# for example, '/blog' if your blog hosted on 'host/blog'      
+baseurl: ""
+# you code repository
+github_repo: "https://github.com/LyricYang/LyricYang.github.io.git"
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -17,7 +20,6 @@ RSS: true
 github_username:    Lyricyang
 linkedin_username:  lin-yang-733705341
 twitter_username:   AaronYeohXY
-
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -31,10 +33,11 @@ exclude:
     "node_modules",
     "Gruntfile.js",
     "package.json",
-    "Readme.md",
-    "Readme.zh.md",
+    "Readme.md"
   ]
-anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+# if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: true 
+
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 #timezone: CN
 
@@ -61,13 +64,11 @@ kramdown:
 # Disqus settings
 disqus_username: lyricyang
 
-# Netease settings
-netease_comment: false
-
 # Sidebar settings
-sidebar: true                                 # whether or not using Sidebar.
+# whether or not using Sidebar.
+sidebar: true           
 sidebar-about-description: "Get busy living, Or get busy dying!"
-sidebar-avatar: /img/icon/about-YM-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/icon/about-YM-gentle.jpg
 
 # Google Analytics
 # 作用：指定 Google Analytics 的跟踪 ID，用于唯一标识你的 GA 属性。

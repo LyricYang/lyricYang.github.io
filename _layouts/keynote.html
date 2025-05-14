@@ -2,13 +2,8 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
 <!-- Post Header -->
 {% include intro-header.html type='keynote' %}
-
 
 <!-- Post Content -->
 <article>
@@ -16,9 +11,7 @@ layout: default
         <div class="row">
 
             <!-- Post Container -->
-            <div class="post-container
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1 ">
+            <div class="post-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
 
 				{{ content }}
 
@@ -56,9 +49,7 @@ layout: default
             </div>
 
             <!-- Sidebar Container -->
-            <div class="sidebar-container
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1 ">
+            <div class="sidebar-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
 
                 <!-- Featured Tags -->
                 {% include featured-tags.html %}
@@ -111,7 +102,6 @@ layout: default
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
-
 
 {% if site.anchorjs %}
 <!-- async load function -->
