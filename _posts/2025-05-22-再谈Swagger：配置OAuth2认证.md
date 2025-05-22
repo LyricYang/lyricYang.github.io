@@ -351,13 +351,13 @@ auth errorError: response status is 400, error: invalid_request, description: AA
 
 ![img](/img/swagger2/Pasted_image_20250522205538.jpg)
 
-配置完这些，允许程序可以看到
+配置完这些，运行程序可以看到
 
 ![img](/img/swagger2/Pasted_image_20250522205910.jpg)
 
 ![img](/img/swagger2/Pasted_image_20250522205938.jpg)
 
-!!! 需要注意的是这里`AddSecurityDefinition("oauth2"`中的`oauth2`必须是小写的，否则及时验证通过也无法在调用API时将Token添加到Header中。
+!!! 需要注意的是这里`AddSecurityDefinition("oauth2"`中的`oauth2`必须是小写的，否则即使验证通过也无法在调用API时将Token添加到Header中。
 
 ### 3.3 隐藏特定接口
 
